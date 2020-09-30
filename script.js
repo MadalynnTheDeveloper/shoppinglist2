@@ -31,7 +31,6 @@ function addItemToShoppingList() {
     console.log("Item HTML:", itemHtml);
     let itemListRef = document.getElementById("shopping-list");
     itemListRef.insertAdjacentHTML("afterend", itemHtml);
-
     setDeleteButtonEvent(id)
 }
 
@@ -43,9 +42,9 @@ function setDeleteButtonEvent(id) {
 }
 
 function createListItemHtml(itemName, itemAmount, id) {
-    return `<li id="item ${id}">    
+    return `<li id="item${id}">    
                 ${itemName} - ${itemAmount}
-                <button id="button ${id}" type="button">Delete Item</button>
+                <button id="button${id}" type="button">Delete Item</button>
             </li>`;
 }
 
